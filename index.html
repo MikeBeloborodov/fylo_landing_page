@@ -32,78 +32,96 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="title-section">
+        <img src="images/illustration-1.svg" alt="" class="illustration" />
         <div>
-          <h2>All your files in one secure location, accessible anywhere.</h2>
+          <h1>All your files in one secure location, accessible anywhere.</h2>
           <p>
             Fylo stores your most important files in one secure location. Access
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <form action="">
-            <input type="email" id="email" name="email" />
+          <form action="" class="form__get-started">
+            <input type="email" id="email" name="email" placeholder="Enter your email..."/>
             <button type="submit">Get Started</button>
           </form>
         </div>
-        <img src="images/illustration-1.svg" alt="" />
       </section>
-      <section>
+      <img src="images/bg-curve-mobile.svg" alt="" class="curve">
+      <section class="change_color">
+        <img src="images/illustration-2.svg" alt="" class="illustration" />
         <h2>Stay productive, wherever you are</h2>
         <p>
           Never let location be an issue when accessing your files. Fylo has you
-          covered for all of your file storage needs. Securely share files and
+          covered for all of your file storage needs. <span class="new_line"> Securely share files and
           folders with friends, family and colleagues for live collaboration. No
-          email attachments required
+          email attachments required!</span>
         </p>
-        <a href="/presentation">See how Fylo works</a>
-        <article>
-          <p>
+        <a href="/presentation" class="presentation__link">
+          <div class="presentation__link-box">
+            <p class="presentation__link-text">See how Fylo works</p>
+            <img src="images/icon-arrow.svg" alt="" class="arrow-icon">
+          </div>
+        </a>
+        <article class="testimonial">
+          <img src="images/icon-quotes.svg" alt="" class="testimonial__quotes">
+          <p class="testimonial__text">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
             collaboration machine.
           </p>
-          <div>
-            <img src="images/avatar-testimonial.jpg" alt="" />
-            <p>KyleBurton<span>Founder &amp; CEO, Huddle</span></p>
+          <div class="testimonial__author">
+            <img src="images/avatar-testimonial.jpg" alt="" class="testimonial__avatar" />
+            <p class="testimonial__name">KyleBurton<span class="testimonial__job-title">Founder &amp; CEO, Huddle</span></p>
           </div>
         </article>
       </section>
-      <section>
+      <section class="early-access">
         <div>
-          <h2>Get early access today</h2>
-          <p>
+          <h2 class="early-access__title">Get early access today</h2>
+          <p class="early-access__text">
             It only takes a minute to sign up and our free starter tier is
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
         </div>
-        <form action="">
-          <input type="email" />
-          <button type="submit">Get Started For Free</button>
+        <form action="" class="early-access__form">
+          <input type="email" class="early-access__email" placeholder="email@example.com" />
+          <button type="submit" class="early-access__button">Get Started For Free</button>
         </form>
       </section>
     </main>
     <footer>
-      <img src="images/logo.svg" alt="" />
-      <div>
-        <a href="tel:+1-543-123-4567">+1-543-123-4567</a>
-        <a href="mailto:example@fylo.com">example@fylo.com</a>
+      <img src="images/logo footer.svg" alt="" class="footer__logo"/>
+      <div class="footer__flex-container phone-email">
+        <div class="footer__img-grid-container">
+          <img src="images/icon-phone.svg" alt="" class="footer__decoration-img">
+          <a href="tel:+1-543-123-4567" class="footer_link">Phone: +1-543-123-4567</a>
+          <img src="images/icon-email.svg" alt="" class="footer__decoration-img">
+          <a href="mailto:example@fylo.com" class="footer_link">example@fylo.com</a>
+        </div>
       </div>
-      <div>
-        <a href="/about">About Us</a>
-        <a href="/jobs">Jobs</a>
-        <a href="/press">Press</a>
-        <a href="/blog">Blog</a>
+      <div class="footer__flex-container">
+        <a href="/about" class="footer_link">About Us</a>
+        <a href="/jobs" class="footer_link">Jobs</a>
+        <a href="/press" class="footer_link">Press</a>
+        <a href="/blog" class="footer_link">Blog</a>
       </div>
-      <div>
-        <a href="/contacts">Contact Us</a>
-        <a href="/terms">Terms</a>
-        <a href="/privacy">Privacy</a>
+      <div class="footer__flex-container">
+        <a href="/contacts" class="footer_link">Contact Us</a>
+        <a href="/terms" class="footer_link">Terms</a>
+        <a href="/privacy" class="footer_link">Privacy</a>
       </div>
-      <div>
-        <a href="/facebook">Facebook</a>
-        <a href="/twitter">Twitter</a>
-        <a href="/instagram">Instagram</a>
+      <div class="social-media-flex-container">
+        <a href="/facebook" class="footer_link">
+          <img src="images/facebook-f.svg" alt="" class="social-media-icon">
+        </a>
+        <a href="/twitter" class="footer_link">
+          <img src="images/twitter.svg" alt="" class="social-media-icon">
+        </a>
+        <a href="/instagram" class="footer_link">
+          <img src="images/instagram.svg" alt="" class="social-media-icon">
+        </a>
       </div>
     </footer>
   </body>

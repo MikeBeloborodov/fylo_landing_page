@@ -46,13 +46,14 @@ h5,
 h6 {
     overflow-wrap: break-word;
 }
+
 /* END RESET DEFAULTS */
 
 /* STYLES */
 body {
     font-family: var(--ff-open-sans);
     font-weight: var(--fw-regular);
-    padding: 2.6rem 3rem;
+    padding-top: 2.6rem;
 }
 
 header {
@@ -61,19 +62,22 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10rem;
+    padding: 0 3rem;
 }
 
 header img {
-    height: 3rem;
+    max-height: 3rem;
     width: auto;
 }
 
-header ul {
+nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    flex-wrap: wrap;
     gap: 3.8rem;
 }
+
 
 header a {
     display: block;
@@ -85,18 +89,307 @@ header a {
 section {
     display: grid;
     text-align: center;
+    padding: 0 3rem;
 }
 
-section img {
-    grid-row: 1;
-    margin-bottom: 5.5rem;
-}
-
-section h2 {
+section h2,
+h1 {
     font-size: 3rem;
     font-weight: var(--fw-bold);
     font-family: var(--ff-open-sans);
     color: var(--clr-very-dark-blue);
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-family: var(--ff-raleway);
+}
+
+section p {
+    font-size: 1.79rem;
+    padding: 0 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.form__get-started {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin-bottom: 12rem;
+}
+
+.form__get-started input {
+    border: 2px solid var(--clr-desaturated-blue);
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    padding: 0.5rem 0 0.5rem 2rem;
+}
+
+.form__get-started input::placeholder {
+    color: var(--clr-light-gray);
+    font-family: var(--ff-raleway);
+    opacity: 0.8;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.form__get-started button {
+    font-family: var(--ff-raleway);
+    background-color: var(--clr-bright-blue);
+    color: var(--clr-light-grayish-blue);
+    border: none;
+    border-radius: 0.4rem;
+    padding: 1.5rem 0;
+    font-size: 1.7rem;
+    font-weight: var(--fw-bold);
+}
+
+.change_color {
+    background-color: var(--clr-light-grayish-blue);
+}
+
+.change_color .illustration {
+    margin-top: 4rem;
+    margin-bottom: 10.5rem;
+}
+
+.change_color {
+    color: var(--clr-desaturated-blue);
+    text-align: start;
+}
+
+.change_color h2 {
+    text-align: center;
+}
+
+.new_line {
+    margin-top: 2rem;
+    display: block;
+}
+
+.presentation__link {
+    text-decoration: none;
+    margin-bottom: 5em;
+    justify-self: center;
+}
+
+.presentation__link-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--clr-moderate-cyan);
+    padding-bottom: 0.5rem;
+}
+
+.presentation__link-text {
+    margin: 0;
+    font-size: 1.49rem;
+    color: var(--clr-moderate-cyan);
+}
+
+.arrow-icon {
+    width: auto;
+    height: 2rem;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 2.5rem 3rem;
+    margin: 0 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 10rem;
+}
+
+.testimonial__text {
+    font-size: 1.25rem;
+    padding: 0;
+    color: var(--clr-very-dark-blue);
+    letter-spacing: 0.03rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.9;
+}
+
+.testimonial__name {
+    margin-left: 0.5rem;
+    color: var(--clr-very-dark-blue);
+    font-family: var(--ff-open-sans);
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-open-sans);
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0;
+}
+
+.testimonial__quotes {
+    width: auto;
+    height: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial__author {
+    display: flex;
+}
+
+.testimonial__avatar {
+    width: auto;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.testimonial__job-title {
+    display: block;
+    font-weight: var(--fw-regular);
+    font-family: var(--ff-raleway);
+    font-size: 0.9rem;
+    letter-spacing: initial;
+}
+
+.early-access {
+    background-color: var(--clr-desaturated-blue);
+    color: var(--clr-light-grayish-blue);
+    padding: 6.1rem 6rem;
+}
+
+.early-access__title {
+    color: var(--clr-light-grayish-blue);
+    font-size: 2.2rem;
+}
+
+.early-access__text {
+    font-size: 1.7rem;
+    margin-bottom: 2.7rem;
+}
+
+.early-access__form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+}
+
+.early-access__email {
+    border: 2px solid var(--clr-light-grayish-blue);
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    padding: 1.4rem 0 1.4rem 1rem;
+}
+
+.early-access__email::placeholder {
+    color: var(--clr-light-gray);
+    font-family: var(--ff-raleway);
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+.early-access__button {
+    font-family: var(--ff-raleway);
+    background-color: var(--clr-bright-blue);
+    color: var(--clr-light-grayish-blue);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 1.3rem 0;
+    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+}
+
+footer {
+    background-color: var(--clr-very-dark-blue);
+    padding: 8.8rem 5rem 5rem;
+    display: grid;
+    gap: 8rem;
+}
+
+footer .footer_link {
+    color: var(--clr-light-grayish-blue);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.footer__logo {
+    width: auto;
+    height: 6rem;
+    margin-bottom: -0.8rem;
+}
+
+.footer__flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__img-grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: fit-content;
+    align-items: center;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    margin-bottom: -1.5rem;
+}
+
+.footer__decoration-img {
+    width: auto;
+    height: 2rem;
+}
+
+.social-media-icon {
+    width: auto;
+    height: 3.8rem;
+    border: 2px white solid;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.social-media-flex-container {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 42.5rem) {
+    html {
+        font-size: 0.5em;
+    }
+
+    .social-media-icon {
+        width: auto;
+        height: 6.8rem;
+        border: 2px white solid;
+        border-radius: 50%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 22rem) {
+    html {
+        font-size: 0.3em;
+    }
+
+    .social-media-icon {
+        width: auto;
+        height: 8rem;
+        border: 2px white solid;
+        border-radius: 50%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 14rem) {
+    html {
+        font-size: 0.2rem;
+    }
+
+    .social-media-icon {
+        width: auto;
+        height: 8rem;
+        border: 2px white solid;
+        border-radius: 50%;
+        padding: 2rem;
+    }
 }
 
 /* END STYLES */
