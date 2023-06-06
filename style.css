@@ -366,6 +366,18 @@ footer .footer_link {
     margin: 0 auto;
 }
 
+/* hide something from screen reader */
+/* https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: insert(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 @media screen and (min-width: 75rem) {
     html {
         font-size: 0.85rem;
